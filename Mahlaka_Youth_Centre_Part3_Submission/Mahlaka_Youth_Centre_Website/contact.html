@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contact youth centre, volunteer, youth programmes, community partnership">
+    <meta name="author" content="Mahlaka Youth Centre student project">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Contact Mahlaka Youth Centre for programme information, volunteering, partnerships and general enquiries.">
+    <title>Contact Mahlaka Youth Centre | Get in Touch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="Mahlaka Youth Centre home">
+                <span class="logo-mark">MYC</span>
+                <span><strong>Mahlaka</strong><small>Youth Centre</small></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="programmes.html">Programmes</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">CONTACT</p>
+                <h1>Let's connect.</h1>
+                <p>Use the details below or send a message through the contact form.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="contact-details">
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>We would like to hear from you.</h2>
+                    <div class="contact-item"><strong>Email</strong><span>info@mahlakayouthcentre.org</span></div>
+                    <div class="contact-item"><strong>Phone</strong><span>071 000 0000</span></div>
+                    <div class="contact-item"><strong>Hours</strong><span>Monday – Friday, 08:00 – 16:30</span></div>
+                    <div class="contact-item"><strong>Location</strong><span>South Africa — community youth centre</span></div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone number (optional)</label>
+                        <input id="phone" name="phone" type="tel" pattern="[0-9 +()-]{7,20}" placeholder="e.g. 071 234 5678">
+                    </div>
+                    <div class="form-row">
+                        <label for="topic">Reason for contacting us</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Select an option</option>
+                            <option>Programme information</option>
+                            <option>Volunteering</option>
+                            <option>Partnership</option>
+                            <option>General enquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                    <p class="form-message" id="formMessage" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><div class="footer-brand">Mahlaka Youth Centre</div><p>Creating opportunities for young people through skills, support and community.</p></div>
+            <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="programmes.html">Programmes</a></div>
+            <div><h3>Contact</h3><p>Email: info@mahlakayouthcentre.org</p><p>Phone: 071 000 0000</p></div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="year"></span> Mahlaka Youth Centre. Student project website.</p>
+            <p>Responsive website project.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

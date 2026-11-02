@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="youth programmes, digital skills, career readiness, leadership, creative activities">
+    <meta name="author" content="Mahlaka Youth Centre student project">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Explore digital skills, career readiness, leadership and creative programmes offered by Mahlaka Youth Centre.">
+    <title>Youth Programmes | Mahlaka Youth Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="Mahlaka Youth Centre home">
+                <span class="logo-mark">MYC</span>
+                <span><strong>Mahlaka</strong><small>Youth Centre</small></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="programmes.html">Programmes</a>
+                <a href="contact.html">Contact</a>
+                    <a href="enquiry.html">Enquire</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">PROGRAMMES</p>
+                <h1>Practical activities for growth and participation.</h1>
+                <p>Explore the main programme areas presented for Mahlaka Youth Centre.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="programme-search">
+                    <label for="programmeSearch">Search programmes</label>
+                    <input id="programmeSearch" type="search" placeholder="Try digital, career or leadership" aria-describedby="searchHelp">
+                    <small id="searchHelp">Type a keyword to filter the programme cards.</small>
+                </div>
+                <div class="programme-grid" id="programmeList" aria-live="polite">
+                    <article class="programme-card" data-search="digital skills computer internet online safety productivity">
+                        <div class="programme-number">01</div><h2>Digital Skills</h2>
+                        <p>Introduction to computers, online research, email, documents and responsible digital participation.</p>
+                        <ul><li>Computer basics</li><li>Online safety</li><li>Productivity tools</li></ul>
+                    </article>
+                    <article class="programme-card" data-search="career readiness cv interview job goals">
+                        <div class="programme-number">02</div><h2>Career Readiness</h2>
+                        <p>Activities that help young people prepare for study, work opportunities and personal goals.</p>
+                        <ul><li>CV preparation</li><li>Interview practice</li><li>Goal setting</li></ul>
+                    </article>
+                    <article class="programme-card" data-search="leadership teamwork communication responsibility">
+                        <div class="programme-number">03</div><h2>Leadership</h2>
+                        <p>Team activities that develop communication, responsibility, decision-making and confidence.</p>
+                        <ul><li>Teamwork</li><li>Communication</li><li>Peer leadership</li></ul>
+                    </article>
+                    <article class="programme-card" data-search="creative arts design projects showcase">
+                        <div class="programme-number">04</div><h2>Creative Activities</h2>
+                        <p>Creative sessions that give young people a positive way to express ideas and discover interests.</p>
+                        <ul><li>Arts and design</li><li>Creative projects</li><li>Youth showcases</li></ul>
+                    </article>
+                </div>
+                <p id="noProgrammeResults" class="form-message" hidden>No programmes match your search. Try another keyword.</p>
+            </div>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">PARTICIPATION</p>
+                    <h2>There is a place for your skills.</h2>
+                </div>
+                <div>
+                    <p>
+                        Young people can participate as learners, volunteers or peer contributors.
+                        Programme details can be adapted according to the needs of the community.
+                    </p>
+                    <a class="btn btn-primary" href="contact.html">Ask About Programmes</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><div class="footer-brand">Mahlaka Youth Centre</div><p>Creating opportunities for young people through skills, support and community.</p></div>
+            <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+            <div><h3>Contact</h3><p>Email: info@mahlakayouthcentre.org</p><p>Phone: 071 000 0000</p></div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="year"></span> Mahlaka Youth Centre. Student project website.</p>
+            <p>Responsive website project.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
